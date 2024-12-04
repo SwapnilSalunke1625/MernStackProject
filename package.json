@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "concurrently \"npm run start:server\" \"npm run start:client\"",
+    "build": "react-scripts build",
     "start:server": "cd backend && npm run dev",
     "start:client": "cd frontend/tradeconnect && npm run dev",
     "setup": "concurrently \"npm run install:server\" \"npm run install:client\"",
@@ -16,7 +17,8 @@
   "license": "ISC",
   "devDependencies": {
     "concurrently": "^9.0.1",
-    "daisyui": "^4.12.14"
+    "daisyui": "^4.12.14",
+    "react-scripts": "^5.0.1"
   },
   "dependencies": {
     "@emotion/react": "^11.13.5",
